@@ -16,10 +16,10 @@ public class Factory {
 
 	ArrayList<Bike> arrayList = new ArrayList<>();
 
-	ArrayList<Bike> order(String BikeName, int items) {
-		if (h.containsKey(BikeName.toLowerCase())) {
+	ArrayList<Bike> order(String bikeName, int items) {
+		if (h.containsKey(bikeName.toLowerCase())) {
 			for (int i = 0; i < items; i++) {
-				arrayList.add(h.get(BikeName));
+				arrayList.add(h.get(bikeName));
 			}
 		}
 		return arrayList;
