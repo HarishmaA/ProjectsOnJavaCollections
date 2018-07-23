@@ -17,7 +17,7 @@ public class Factory {
 	ArrayList<Bike> arrayList = new ArrayList<>();
 
 	ArrayList<Bike> order(String bikeName, int items) {
-		if (h.containsKey(bikeName.toLowerCase())) {
+		if (bikesProduced.containsKey(bikeName.toLowerCase())) {
 			for (int i = 0; i < items; i++) {
 				arrayList.add(bikesProduced.get(bikeName));
 			}
