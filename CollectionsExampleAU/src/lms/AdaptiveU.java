@@ -52,8 +52,7 @@ public class AdaptiveU {
 			return false;
 		if (!(obj instanceof AdaptiveU))
 			return false;
-		if (obj == this)
-			return true;
+		
 		if (!this.identificationName.equals(((AdaptiveU) obj).identificationName)) {
 			return false;
 		}
@@ -63,6 +62,8 @@ public class AdaptiveU {
 		if (!(this.time == ((AdaptiveU) obj).time)) {
 			return false;
 		}
+		if (obj == this)
+			return true;
 		return true;
 	}
 
